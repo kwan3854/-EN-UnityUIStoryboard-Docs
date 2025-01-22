@@ -14,7 +14,7 @@
 * We register the handling of all user actions, such as button events, after all transition animations are over because:
   * Too many unexpected things happen if the user can enter during the transition.
   * From the user's perspective, it doesn't matter if they can interact during the transition, such as clicking a button.
-  * From the user's point of view, it's more important to see a blank or incomplete screen in the middle of a transition animation, which is fine because WillPushEnterAsync takes care of it all;
+  * From the user's point of view, it's more important to see a blank or incomplete screen during the transition animation, which is fine because WillPushEnterAsync takes care of it all;
 
 ### Put the key value of the Asset into the attribute.
 

@@ -24,5 +24,5 @@ For the purposes of this example guide, we'll use 1080x1920.
 
 <figure><img src="../../../.gitbook/assets/screenshot 2025-01-11 11:58.46.png" alt=""><figcaption></figcaption></figure>
 
-* The reference resolution registered here will be used as the basis for automatically generating thumbnails for Page and Modal preps in Storyboard.
+* The reference resolution registered here will be used as a baseline when automatically generating thumbnails for Page and Modal preps in Storyboard.
 * The same resolution will be used in the Canvas that will be used in the actual game later on.
