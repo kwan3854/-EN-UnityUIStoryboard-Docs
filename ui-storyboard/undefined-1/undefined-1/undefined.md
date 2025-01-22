@@ -31,5 +31,5 @@ Be sure to do this in a new project. If you want to apply it to an existing proj
   * Generates the required asmdefs that are needed at the most basic level.
   * Automatic generation of the most basic required references.
 
-<figure><img src="../../../.gitbook/assets/screenshot 2025-01-11 11:12.47.png" alt=""><figcaption><p>Assembly Definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/screenshot 2025-01-11 11.12.47.png" alt=""><figcaption><p>Assembly Definition</p></figcaption></figure>
 

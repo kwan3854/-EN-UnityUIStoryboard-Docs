@@ -48,7 +48,7 @@ public class TestPageView : PageViewBase
 }
 ```
 
-* Event handling for buttons can also be implemented using IUniTaskAyncEnumerable and ForEachAwaitAsync in UniTask instead of UniRx.
+* Event handling for buttons can also be implemented using IUniTaskAyncEnumerable and ForEachAwaitAsync in UniTask rather than UniRx.
   * When implemented with UniTask, it is easy to implement blocking-like processing, such as not performing the next processing until asynchronous processing such as communication processing is completed when a button is pressed.
   * Debugging is easier with UniTask Tracker when using UniTask.
   * The decision to use UniRx or UniTask is highly dependent on the developer's skills and knowledge. (Choose whichever you are more comfortable with).

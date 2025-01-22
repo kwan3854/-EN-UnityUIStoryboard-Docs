@@ -65,4 +65,4 @@ _testMessageSubscriber.Subscribe(m =>
 
 ***]
 
-As shown above, we've created registration, publish-side processing, and subscription-side processing in LifetimeScope, messaging is happening, and multiple screens are being updated. We utilize MessagePipe because it's a great library for implementing messaging, whether it's in-game or not.
+As shown above, we've created a registration, publish-side processing, and subscription-side processing in LifetimeScope, and messaging is taking place, updating multiple screens. We utilize MessagePipe because it's a great library for implementing messaging, whether it's in-game or not.
