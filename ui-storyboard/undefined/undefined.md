@@ -1,4 +1,4 @@
-# 전체 구조 도표
+# Overall structure diagram
 
 ```mermaid
 flowchart TB
@@ -39,7 +39,7 @@ flowchart TB
 
     %% Dependency Injection Explanation
     subgraph DependencyInjection["DI (VContainer)"]
-      note1[All connections are managed via DI container using VContainer.]
+      note1[All connections are managed via DI container using VContainer.].
     end
     CoreDomain -.-> DependencyInjection
     UseCases -.-> DependencyInjection

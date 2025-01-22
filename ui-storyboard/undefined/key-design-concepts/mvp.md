@@ -36,7 +36,7 @@ I'm not claiming that this is necessarily the right way to do things. I think th
 
 ### MVPs are a set of
 
-* When implementing MVPs, write them as a single set of MVPs, excluding the possibility that they could be used elsewhere.
+* When implementing MVPs, write them as a single set of MVPs, excluding the possibility that they may be used elsewhere.
 * There must be one Model, one View, and one Presenter on a screen.
 * Do not use interfaces to extract common logic parts.
 * If the plan changes, only one set needs to be modified, and the UI of the other screens is not affected.

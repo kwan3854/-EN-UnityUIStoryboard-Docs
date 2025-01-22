@@ -1,6 +1,6 @@
----
-description: Page/Modal 의 lifecycle
----
+---.
+description: lifecycle of Page/Modal
+---.
 
 # Lifecycle
 
@@ -10,7 +10,7 @@ sequenceDiagram
     participant B as Depth B
     participant C as Depth C
 
-    %% Depth A: 첫 Push
+    %% Depth A: First Push
     Note over A: Depth A
     A-->A: WillPushEnter
     A-->A: Enter Animation
