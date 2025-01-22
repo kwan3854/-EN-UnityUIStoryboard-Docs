@@ -1,6 +1,6 @@
 # MVRP method (Model-View-Reactive Presenter)
 
-- Presenter, View are bound to the existing MVP pattern in a reactive way (using UniTask, R3).
+- Presenter, View are bound to an existing MVP pattern in a reactive way (using UniTask, R3)
 
 - Presenter is referred to as "Lifecycle" in this document.
 

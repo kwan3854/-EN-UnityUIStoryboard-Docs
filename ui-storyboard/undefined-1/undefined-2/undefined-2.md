@@ -28,7 +28,7 @@ You can rename a node by right-clicking on it -> Rename.
 > > _Example: Item Shop Page, Alert Modal...._
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/screenshot 2025-01-12 AM 12.37.14.png" alt=""><figcaption><p>Example Storyboard</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Storyboard1.png" alt=""><figcaption><p>Example Storyboard</p></figcaption></figure>
 
 * Consists of three UI elements.
   * **Log In Page:** This is the initial screen where the login button exists.

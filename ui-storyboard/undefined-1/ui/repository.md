@@ -3,7 +3,7 @@
 * Serves as an intermediary between `Gateway` and `UseCase`.
 * Since `UseCase` is implemented with only domain logic in mind, and `Gateway` is implemented with only external communication in mind, it connects the two in the middle.
   * At this time, it caches and processes the necessary data, handles communication exceptions, etc.
-  * Caching data is one of the important roles of the `Repository`, and it is very closely related to the lifetime of the `Repository` object, so it is necessary to design well what lifetime the `Repository` should have and what `LifetimeScope` it should belong to.
+  * Caching data is one of the important roles of the `Repository`, and it is very closely related to the lifetime of the `Repository` object, so it is necessary to design the lifetime of the `Repository` and which `LifetimeScope` it should belong to.
 
 ```csharp
 public class AccountRepository : ISignInRepository, ISignOutRepository,

@@ -1,7 +1,7 @@
 # RootLifetimeScope
 
 * Attach it to the top-level GameObject in the top-level scene of your project.
-* Below is example code, the main purpose of the RootLifetimeScope is to register things that should have a lifetime throughout the game, and it is also responsible for triggering the EntryPoint that launches the first UI page.
+* Below is example code, the main purpose of the RootLifetimeScope is to register things that should have a lifetime throughout the game, and it also triggers the EntryPoint that launches the first UI page.
 
 ```csharp
 public class ProjectRootLifetimeScope : VContainer.Unity.LifetimeScope

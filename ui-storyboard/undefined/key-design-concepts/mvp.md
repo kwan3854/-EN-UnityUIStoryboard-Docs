@@ -6,7 +6,7 @@ Before we start writing code in earnest, we need to talk about the concept of st
 
 ### For the canonical MVP
 
-* A canonical MVP requires that you create a Model, View, and Presenter, and that they communicate only through interfaces, without considering their specific implementations, in order to make them less dependent on each other.
+* A canonical MVP requires that you create a Model, View, and Presenter and make them communicate through interfaces without considering their specific implementations in order to make them less dependent on each other.
 * This is a design that takes into account the reusability of each UI element, and is a very valid approach when there are many UI structures that can be reused throughout the project.
 * However, this design requires a significant amount of time/effort.
 
@@ -36,7 +36,7 @@ I'm not claiming that this is necessarily the right way to do things. I think th
 
 ### MVPs are a set of
 
-* When implementing MVPs, write them as a single set of MVPs, excluding the possibility that they may be used elsewhere.
+* When implementing MVPs, write them as a single set of MVPs, excluding the possibility that they could be used elsewhere.
 * There must be one Model, one View, and one Presenter on a screen.
 * Do not use interfaces to extract common logic parts.
 * If the plan changes, only one set needs to be modified, and the UI of the other screens is not affected.

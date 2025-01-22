@@ -9,17 +9,17 @@
 
 ### Set the player in the editor to the reference resolution
 
-<figure><img src="../../../../.gitbook/assets/screenshot 2025-01-12 12:03.30 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Guide5.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/screenshot 2025-01-12 12:04.08 PM 12.04.08 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReferenceResolutionGuide3.png" alt=""><figcaption></figcaption></figure>
 
-### Set the canvas resolution to the reference resolution
+### Setting the canvas resolution to the reference resolution
 
-<figure><img src="../../../../.gitbook/assets/screenshot 2025-01-12 12:04.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Canvas.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/screenshot 2025-01-12 12:05.32.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReferenceResolutionGuide2.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/screenshot 2025-01-12 12:05.54.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReferenceResolutionGuide.png" alt=""><figcaption></figcaption></figure>
 
 ## Configure the mockup UI
 
@@ -28,4 +28,4 @@ This library is developed with the assumption that the UI will be configured as 
 * The sample below uses an Image component to create a background and a
 * A Button TextMeshPro object was created to represent the login button.
 
-<figure><img src="../../../.gitbook/assets/screenshot 2025-01-12 12:07.23.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/SignInPageMock.png" alt=""><figcaption></figcaption></figure>
