@@ -2,22 +2,24 @@
 
 ### Concepts
 
-* BuilderBase is one of the features of ScreenSystem, which works with DI Container to create screens and generate Pages and Modals.
-* Elements to be used in the next screen can be defined and passed as Parameters.
-* For example, let's say you have a UI where you tap an item in the inventory to go to the item detail page.
-  * The ID of the selected item can be passed as a parameter to the next screen.
+- BuilderBase is a feature of the ScreenSystem that works with DI Containers to create screens and generate Pages and Modals.
+- The elements to be used in the next screen can be defined and passed as Parameters.
+- For example, imagine a UI where tapping an item in your inventory takes you to the item detail page.
+  - You can pass the ID of the selected item via a parameter to the next screen.
 
 ### Example code
 
 ```csharp
 public class TestPageBuilder : PageBuilderBase<TestLifecycle, TestPageView>
-{ }
+{
     public TestBuilder(bool playAnimation = true, bool stack = true) : base(playAnimation, stack) { }
 }
 
-// passing parameters to the next screen
+// 다음 화면에 파라미터를 전달하는 경우
 public class TestPageBuilder : PageBuilderBase<TestLifecycle, TestView, TestPageParameter>
-{ TestView
+{
     public TestBuilder(TestParameter parameter, bool playAnimation = true, bool stack = true) : base(parameter, playAnimation, stack) { }
 }
 ```
+
+

@@ -2,12 +2,12 @@
 
 ## Create an empty scene
 
-1. Right-click in the project window -> `Create` -> `Scene` -> `Scene`
-2. double-click the created scene to open it
+1. In the Project window, Right-click -> Select `Create` Right-click -> `Scene` Right-click -> -> `Scene`
+2. Double-click to open the created scene
 
-## Setting the reference resolution
+## Set to Reference Resolution
 
-### Set the player in the editor to the reference resolution
+### Setting the Player in the Editor to a Reference Resolution
 
 <figure><img src="../../../.gitbook/assets/Guide5.png" alt=""><figcaption></figcaption></figure>
 
@@ -15,7 +15,7 @@
 
 ### Setting the canvas resolution to the reference resolution
 
-<figure><img src="../../../.gitbook/assets/Canvas.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Canvas.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/ReferenceResolutionGuide2.png" alt=""><figcaption></figcaption></figure>
 
@@ -23,9 +23,11 @@
 
 ## Configure the mockup UI
 
-This library is developed with the assumption that the UI will be configured as a UGUI.
+This library was developed with the assumption that the UI will be configured as a UGUI.
 
-* The sample below uses an Image component to create a background and a
-* A Button TextMeshPro object was created to represent the login button.
+- The sample below uses the Image component to create a background and the
+- Button TextMeshPro object to represent the login button.
 
 <figure><img src="../../../../.gitbook/assets/SignInPageMock.png" alt=""><figcaption></figcaption></figure>
+
+

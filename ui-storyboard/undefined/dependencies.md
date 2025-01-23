@@ -1,11 +1,11 @@
----.
+---
 coverY: 0
----.
+---
 
 # Dependencies
 
 {% hint style="success" %}
-This system depends on the following Unity packages and libraries.
+The system relies on the following Unity packages and libraries
 {% endhint %}
 
 1. UniTask
@@ -19,3 +19,5 @@ This system depends on the following Unity packages and libraries.
 {% hint style="info" %}
 What each library does will be covered specifically in later articles.
 {% endhint %}
+
+

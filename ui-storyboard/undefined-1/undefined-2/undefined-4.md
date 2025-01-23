@@ -1,5 +1,7 @@
-# Complete the storyboard
+# Finalize your storyboard
 
 <figure><img src="../../../../.gitbook/assets/Storyboard1 (1).png" alt=""><figcaption></figcaption></figure>
 
-The same way, complete with the `Sign In Modal` and `Main Page`.
+In the same way `Sign In Modal`, `Main Page`in the same way
+
+

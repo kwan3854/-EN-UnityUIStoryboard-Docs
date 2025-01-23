@@ -1,2 +1,3 @@
-# \[UI/UX Designer] Designing the UI
+# [UI/UX Designer] Designing the UI
+
 

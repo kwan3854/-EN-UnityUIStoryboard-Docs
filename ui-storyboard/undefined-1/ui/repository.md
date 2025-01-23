@@ -1,15 +1,15 @@
 # Repository
 
-* Serves as an intermediary between `Gateway` and `UseCase`.
-* Since `UseCase` is implemented with only domain logic in mind, and `Gateway` is implemented with only external communication in mind, it connects the two in the middle.
-  * At this time, it caches and processes the necessary data, handles communication exceptions, etc.
-  * Caching data is one of the important roles of the `Repository`, and it is very closely related to the lifetime of the `Repository` object, so it is necessary to design well what lifetime the `Repository` should have and what `LifetimeScope` it should belong to.
+- `Gateway`and `UseCase`as an intermediary between
+- `UseCase`was implemented with only domain logic in mind, `Gateway`is the bridge between the two, as it only thinks about communicating with the outside world.
+  - In this case, it caches and processes the necessary data, handles communication exceptions, etc.
+  - Caching data is done using the `Repository`is one of the important roles of `Repository`object's lifetime, so it's very important to make sure that the `Repository`has a certain lifetime and which `LifetimeScope`to which it should belong.
 
 ```csharp
 public class AccountRepository : ISignInRepository, ISignOutRepository,
     ISignUpRepository, IDeleteAccountRepository,
     IAccountInfoRepository
-{ }
+{
     private readonly IHttpClientGateway _httpClientGateway;
     
     private const string URL = "url";
@@ -20,18 +20,18 @@ public class AccountRepository : ISignInRepository, ISignOutRepository,
 
     [Inject]
     public AccountRepository(IHttpClientGateway httpClientGateway)
-    { [Inject
+    {
         _httpClientGateway = httpClientGateway;
     }
     
-    } public async UniTask<ISignInRepository.SignInResponseData> SignIn(ISignInRepository.SignInRequestData signInData)
-    { return
+    public async UniTask<ISignInRepository.SignInResponseData> SignIn(ISignInRepository.SignInRequestData signInData)
+    {
         var requestData = new HttpSignInRequest(signInData.ID, signInData.Password);
         var httpResponse = await _httpClientGateway
             .RequestAsync<HttpSignInRequest, HttpSignInResponse>(URL, requestData);
 
         if (!httpResponse.IsSuccess)
-        { return
+        {
             return new ISignInRepository.SignInResponseData(false);
         }
             
@@ -42,14 +42,14 @@ public class AccountRepository : ISignInRepository, ISignOutRepository,
         return new ISignInRepository.SignInResponseData(true);
     }
 
-    } public async UniTask<ISignOutRepository.SignOutResponseData> SignOut()
-    { }
+    public async UniTask<ISignOutRepository.SignOutResponseData> SignOut()
+    {
         var requestData = new HttpSignOutRequest(_token);
         var httpResponse = await _httpClientGateway
             .RequestAsync<HttpSignOutRequest, HttpSignInResponse>(URL, requestData);
         
         if (!httpResponse.IsSuccess)
-        { return
+        {
             return new ISignOutRepository.SignOutResponseData(false, "Sign out failed");
         }
         
@@ -57,21 +57,21 @@ public class AccountRepository : ISignInRepository, ISignOutRepository,
         _nickName = null;
         _id = null;
         
-        } return new ISignOutRepository.SignOutResponseData(true, "Sign out");
+        return new ISignOutRepository.SignOutResponseData(true, "Sign out");
     }
 
-    } public async UniTask<ISignUpRepository.SignUpResponseData> SignUp(ISignUpRepository.SignUpRequestData signUpData)
-    { return
+    public async UniTask<ISignUpRepository.SignUpResponseData> SignUp(ISignUpRepository.SignUpRequestData signUpData)
+    {
         throw new System.NotImplementedException();
     }
 
-    } public async UniTask<IDeleteAccountRepository.DeleteAccountResponseData> DeleteAccount(IDeleteAccountRepository.DeleteAccountRequestData deleteAccountData)
-    { return
+    public async UniTask<IDeleteAccountRepository.DeleteAccountResponseData> DeleteAccount(IDeleteAccountRepository.DeleteAccountRequestData deleteAccountData)
+    {
         throw new System.NotImplementedException();
     }
     
-    } public IAccountInfoRepository.AccountInfo GetCurrentAccountInfo()
-    { }
+    public IAccountInfoRepository.AccountInfo GetCurrentAccountInfo()
+    {
         return new IAccountInfoRepository.AccountInfo("id", "nickName", "token");
     }
     
@@ -84,7 +84,7 @@ public class AccountRepository : ISignInRepository, ISignOutRepository,
         public string Password { get; }
 
         public HttpSignInRequest(string id, string password)
-        { id
+        {
             ID = id;
             Password = password;
         }
@@ -103,7 +103,7 @@ public class AccountRepository : ISignInRepository, ISignOutRepository,
         public string NickName { get; }
 
         public HttpSignInResponse(bool isSuccess, string nickName, string token)
-        { get; }
+        {
             IsSuccess = isSuccess;
             NickName = nickName;
             Token = token;
@@ -117,9 +117,11 @@ public class AccountRepository : ISignInRepository, ISignOutRepository,
         public string Token { get; }
 
         public HttpSignOutRequest(string token)
-        { [JsonProperty("token")
+        {
             Token = token;
         }
     }
 }
 ```
+
+

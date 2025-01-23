@@ -1,21 +1,23 @@
 # Create a storyboard
 
-## Using the UI Storyboard Manager
+## Using UI Storyboard Manager
 
-### Open a storyboard
+### Opening a storyboard
 
-Click `Window` -> `UI Storyboard` -> `Storyboard Manager`
+`Window` ->Open Storyboard `UI Storyboard` ->Β `Storyboard Manager` Click
 
 <figure><img src="../../../../.gitbook/assets/Storyboard7.png" alt=""><figcaption><p>Storyboard Manager</p></figcaption></figure>
 
-1. Click `Create Storyboard` to create a new storyboard
-2. the storyboard is created below.
-   1. you can enter a name before creating it.
-   2. after creation, you can rename it by right-clicking the storyboard and clicking the `rename` button.
-3. You can create a folder.
-4. Drag and drop storyboards into the created folder to organize them in the folder.
+1. `Create Storyboard` Click to create a new storyboard
+2. A storyboard will be created below.
+  1. You can enter a name before creating it.
+  2. Once created, right-click on the storyboard and select `rename` button to rename it.
+3. You can create folders.
+4. You can drag and drop storyboards into the created folders to keep them organized.
 5. Double-click the created storyboard to open it.
 
 <figure><img src="../../../../.gitbook/assets/Storyboard5.png" alt=""><figcaption><p>Empty Storyboard</p></figcaption></figure>
 
 An empty storyboard has been opened.
+
+

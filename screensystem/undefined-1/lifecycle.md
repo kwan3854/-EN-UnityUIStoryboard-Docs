@@ -2,60 +2,60 @@
 
 ### Concepts
 
-* The actual EntryPoint of the screen.
-* Acts as a Presenter in the MVP.
-* Created on a per-screen basis.
-* We call it Lifecycle because it is a concept that is associated with the life of the screen.
-* Create only one per screen:&#x20;**<mark style="color:red;">**(No exceptions)**</mark>
+- The actual entry point to the screen.
+- It acts as the Presenter in the MVP.
+- Create it on a per-screen basis.
+- We call it Lifecycle because it's associated with the lifetime of the screen.
+- **Create only one on a screen. **<mark style="color:red;">**(no exceptions)**</mark>.
 
-### Implementation Policy
+### Implementation policy
 
-* The constructor is only responsible for getting a reference to each class imported from the LifetimeScope (it doesn't do any other complicated processing)
-* Inside `WillPushEnterAsync` before the screen transition, do the following.
-  * Create a Model.
-  * Initialize the View (passing the created model to the View).
-* After the screen transition, inside `DidPushEnter`, subscribe to the View button handling.
-  *.
-    Enable button handling after screen transitions so that no button input events are fired during transitions (button presses during transitions can cause a lot of trouble).
-* Specify AssetName (the name of the prep) in the attribute of the class.
+- The constructor is only responsible for getting a reference to each class imported from the LifetimeScope (it doesn't do any other complicated processing)
+- Before switching screens `WillPushEnterAsync` we do the following
+  - Create a Model.
+  - Initialize the View (pass the created model to the View).
+- After switching screens `DidPushEnter` Subscribe to handling the View button in
+  \*.
+  If you enable button handling after screen transitions, button input events will not be fired during transitions (button presses during transitions can be frustrating in many ways).
+- Specify AssetName (the name of the prep) in an attribute of the class.
 
-### Example code.
+### Example code
 
 ```csharp
 [AssetName("TestPage")]
 public class TestPageLifecycle : LifecyclePageBase
-{ }
-    // Declare what we receive in the constructor
+{
+    // 생성자에서 받는 것을 선언합니다.
     private readonly TestPageView _view;
     private readonly PageEventPublisher _publisher;
     private readonly ModalManager _modalManager;
 
-    // Inject constructor.
-    [Inject].
+    // 생성자 인젝션
+    [Inject]
     public TestPageLifecycle(TestPageView view, PageEventPublisher publisher, ModalManager modalManager) : base(view)
-    }
+    {
         _view = view;
         _publisher = publisher;
         _modalManager = modalManager;
     }
 
-    // Initialize the view at the pre-switch timing
+    // 화면 전환 전 타이밍에 View 초기화하기
     protected override UniTask WillPushEnterAsync(CancellationToken cancellationToken)
-    { }
+    {
         var testModel = new TestPageModel();
         _view.SetView(testModel);
-        } return UniTask.CompletedTask;
+        return UniTask.CompletedTask;
     }
 
-    // Register the button event after the screen transition
+    // 화면 전환 후 버튼 이벤트 등록하기
     public override void DidPushEnter()
-    return
+    {
         base.DidPushEnter();
-        // Show the page
+        // 페이지 표시
         _view.OnClickPage.Subscribe(_ => {
           _publisher.SendPushEvent(new NextPageBuilder());
         });
-        // Show Modal
+        // Modal 표시
         _view.OnClickModal.Subscribe(_ => {
           _modalManager.Push(new NextModalBuilder()).Forget();
         });
@@ -64,6 +64,7 @@ public class TestPageLifecycle : LifecyclePageBase
 ```
 
 {% hint style="success" %}
-PageEventPublisher and ModalManager are features of the ScreenSystem that are responsible for switching between Page and Modal, respectively. Next, we build the screen that will open with Builder.
+PageEventPublisher and ModalManager are functions of the ScreenSystem that are responsible for switching between Page and Modal, respectively. Next, we build the screen that will open with Builder.
 {% endhint %}
+
 

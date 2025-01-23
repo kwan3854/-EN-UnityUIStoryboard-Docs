@@ -1,12 +1,14 @@
 # References
 
 {% hint style="success" %}
-The UI design philosophy is inspired by the implementations of CyberAgent and Mirrativ.
+The UI design philosophy was inspired by the implementations of CyberAgent and Mirrativ.
 {% endhint %}
 
-## 1. Inspired development approaches
+## 1\. the development approach you referenced
 
-* &#x20;CyberAgent/Cygames' UI development method [unityscreennavigator](../../unityscreennavigator/ "mention")
-* &#x20;Mirrativ's Out-Game development approach [screensystem](../../screensystem/ "mention")
+-  How CyberAgent/Cygames' UI is developed [unityscreennavigator](../../unityscreennavigator/ "mention")
+-  Mirrativ's approach to out-game development [screensystem](../../screensystem/ "mention")
 
-The UI structure, architecture, and team collaboration practices of these two examples are the foundation of our Unity UI system.
+These two examples of UI structure and architecture, and how teams collaborate, have shaped the Unity UI system.
+
+

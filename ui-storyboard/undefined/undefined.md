@@ -1,5 +1,9 @@
 # Overall structure diagram
 
+{% hint style="success" %}
+**It uses a hybrid approach between MVP and MVVM.** There's also something called MVRP, but it's not exactly a cut-and-dried MVRP.
+{% endhint %}
+
 ```mermaid
 flowchart TB
     %% Onion Architecture Subgraph
@@ -15,7 +19,7 @@ flowchart TB
     subgraph UI_MVRP_Stack['UI MVRP Stack']
       direction TB
       Presenter(Presenter / Lifecycle)
-      Model(Model)
+      ViewModel(ViewModel)
       View(View)
     end
 
@@ -28,7 +32,7 @@ flowchart TB
     Repository --> Gateway
     
     Presenter --> UseCases
-    Presenter --> Model
+    Presenter --> ViewModel
     Presenter --> View
 
     %% Notes and Dependency Injection
@@ -39,7 +43,7 @@ flowchart TB
 
     %% Dependency Injection Explanation
     subgraph DependencyInjection["DI (VContainer)"]
-      note1[All connections are managed via DI container using VContainer.].
+      note1[All connections are managed via DI container using VContainer.]
     end
     CoreDomain -.-> DependencyInjection
     UseCases -.-> DependencyInjection
@@ -47,4 +51,5 @@ flowchart TB
     Gateway -.-> DependencyInjection
     UI_MVRP_Stack -.-> DependencyInjection
 ```
+
 

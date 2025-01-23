@@ -1,24 +1,24 @@
-# Use auto-initialization
+# Using auto-initialization
 
 {% hint style="warning" %}
-Be sure to do this in a new project. If you want to apply it to an existing project, manually clean up your asmdefs, folder structure, etc.
+Be sure to do this in a new project. If you want to apply it to an existing project, manually clean up the asmdef and folder structure, etc.
 {% endhint %}
 
-## 1. Automatic initialization
+## 1\. auto-initialize
 
 ### How to use auto-initialization
 
-1. Click `Edit` -> `Project Settings...`
+1. `Edit`\-> Initialize `Project Settings...` Click
 
 <figure><img src="../../../../.gitbook/assets/ProjectSettingsMenu.png" alt="" width="373"><figcaption><p>Project Settings</p></figcaption></figure>
 
-2. select the UI Storyboard tab (you may see a Create Setup Variable button on first entry, if so, click it)
-3. Enter a project name in the `Project Name` field
-4. click the `Initialize Project Structure` button
+2. Select the UI Storyboard tab (you may see a Create Setup Variable button on first entry, click it if you do)
+3. `Project Name` Enter a name for your project in
+4. `Initialize Project Structure`Click the button
 
-<figure><img src="../../../.gitbook/assets/SettingInitialize.png" alt=""><figcaption><p>UI Storyboard Settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/SettingInitialize.png" alt=""><figcaption><p>UI Storyboard Settings</p></figcaption></figure>
 
-## 2. What does auto-initialization do?
+## 2\. What does auto-initialization do?
 
 ### It creates a folder structure.
 
@@ -26,10 +26,11 @@ Be sure to do this in a new project. If you want to apply it to an existing proj
 
 ### Create the Assembly Definitions.
 
-* Proper use of `asmdef` prevents you from writing code that deviates from the promised structure, and makes your project compile faster.
-* Auto-initialization.
-  * Generates the required asmdefs that are needed at the most basic level.
-  * Automatic generation of the most basic required references.
+- `asmdef` Proper use of assembly definitions prevents you from writing code that deviates from the promised structure and makes your project compile faster.
+- Auto-initialization is
+  - will generate the required asmdefs you need by default.
+  - Automatically generates the required reference, which is the most basic.
 
-<figure><img src="../../../.gitbook/assets/asmdef.png" alt=""><figcaption><p>Assembly Definition</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/asmdef.png" alt=""><figcaption><p>Assembly Definition</p></figcaption></figure>
+
 

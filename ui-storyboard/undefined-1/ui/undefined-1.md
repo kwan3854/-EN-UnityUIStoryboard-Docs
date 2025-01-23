@@ -1,9 +1,11 @@
 # See an example of implementing a login modal window
 
-We need to implement the following `modal`/`page`.
+We'll use the following `모달`/ /.`페이지`should be implemented
 
-* Login page (the initial page where we can show the login modal)
-* Login modal (the modal that actually does the login)
-* The main page of the game
+- Login page (the first page that can show the login modal)
+- Login modal (the modal that takes you through the actual login)
+- The game's main page
 
-Of these, the login modal is the best example to illustrate, so let's go through the code implementation of that part together.
+Of these, the login modal part is the best example to illustrate, so let's implement the code for that part together.
+
+

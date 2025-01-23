@@ -1,35 +1,37 @@
 # LifetimeScope
 
-### Concepts
+### concept
 
-* A unit unique to VContainers.
-* **Write only one for each screen:&#x20;**<mark style="color:red;">**(no exceptions)**</mark>
+- A unit specific to a VContainer.
+- **Create only one for a single screen. **<mark style="color:red;">**(no exceptions)**</mark>.
 
-### Uses.
+### Uses
 
-* Specifies class dependencies within a screen.
-* Passes the View to the Presenter (Lifecycle).
+- Specifies class dependencies within the screen.
+- Hand the view to the Presenter (Lifecycle).
 
 ### How to implement
 
-* Implement by inheriting from LifetimeScope or LifetimeScopeWithParameter.
-* Get the pageView through SerializeField and use it.
-* Add mock information such as communication.
+- Implement by inheriting from LifetimeScope or LifetimeScopeWithParameter.
+- Receive and use a pageView via SerializeField.
+- Add mock information such as communication.
 
 ### Example code
 
 ```csharp
 public class TestLifetimeScope : LifetimeScope
-{ }
+{
     [SerializeField] private TestView _view;
 
     protected override void Configure(IContainerBuilder builder)
-    { [SerializeField
+    {
         base.Configure(builder);
-        builder.RegisterComponent(_view); // Register the View
-        builder.Register<TestPageLifecycle>(Lifetime.Singleton); // Register Lifecycle per screen
-        builder.Register<TestUseCase>(Lifetime.Singleton); // Register a UseCase for Communication
-        AddMockInDebug(builder); // Insert communication Mock plugin
+        builder.RegisterComponent(_view); // View 등록
+        builder.Register<TestPageLifecycle>(Lifetime.Singleton);  // 화면별 Lifecycle 등록
+        builder.Register<TestUseCase>(Lifetime.Singleton); // 통신의 UseCase 등록
+        AddMockInDebug(builder);  // 통신 Mock 플러그인 삽입
     }
 }
 ```
+
+

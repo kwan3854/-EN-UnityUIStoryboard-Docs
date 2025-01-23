@@ -1,2 +1,3 @@
-# Initialize project
+# Project initialization
+
 

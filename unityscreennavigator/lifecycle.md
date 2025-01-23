@@ -1,6 +1,6 @@
----.
-description: lifecycle of Page/Modal
----.
+---
+description: Page/Modal's lifecycle
+---
 
 # Lifecycle
 
@@ -10,7 +10,7 @@ sequenceDiagram
     participant B as Depth B
     participant C as Depth C
 
-    %% Depth A: First Push
+    %% Depth A: 첫 Push
     Note over A: Depth A
     A-->A: WillPushEnter
     A-->A: Enter Animation
@@ -56,4 +56,5 @@ sequenceDiagram
     B-->B: DidPopExit
     A-->A: DidPopEnter
 ```
+
 
