@@ -12,7 +12,7 @@ For example, you may display the character screen after acquiring character data
 
 **If the data resulting from the communication that occurred on the previous screen determines what data should be processed on the next screen,**
 
-We had attempted to communicate within the Lifecycle of the next screen independently of the previous screen and use the responses to build it, but due to the design specifications of UnityScreenNavigator, it didn't handle well enough to cancel the screen transition and return to the previous screen (preventing the next screen from appearing in the first place) in the event of a communication error. This resulted in an uninitialized screen being displayed in the event of a communication error, so we changed it to handle the screen transition after the previous screen has communicated normally.
+We had attempted to communicate within the Lifecycle of the next screen independently of the previous screen and use the responses to build it, but due to the design specification of UnityScreenNavigator, it didn't handle well enough to cancel the screen transition and return to the previous screen (preventing the next screen from appearing in the first place) in the event of a communication error. This resulted in an uninitialized screen being displayed in the event of a communication error, so we changed it to handle the screen transition after the previous screen has communicated normally.
 {% endhint %}
 
 
