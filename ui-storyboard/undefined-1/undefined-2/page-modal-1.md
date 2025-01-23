@@ -2,7 +2,7 @@
 
 ## Create a Page node
 
-1. Right-click on an empty space in the storyboard and select `Create` -> `PageNode`.
+1. Right-click on an empty space in the storyboard -> Create -> `PageNode`.
 
 <figure><img src="../../../../.gitbook/assets/Storyboard4.png" alt=""><figcaption><p>Creating PageNode</p></figcaption></figure>
 

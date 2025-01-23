@@ -16,7 +16,7 @@
 * For moderate mobile orientation, FHD or lower resolutions are sufficient.
 * For example, one of our most popular UI assets is designed for 978x1664 resolution.
 
-*** For example, one of our popular UI assets is built for 978x1664 resolution.
+*** * For example, one of our popular UI assets is built for 978x1664 resolution.
 
 For the purposes of this example guide, we'll use 1080x1920.
 

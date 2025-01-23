@@ -27,7 +27,7 @@ public IUniTaskAsyncEnumerable<string> OnPasswordInputFieldEditAsync => password
 ```
 
 * IUniTaskAsyncEnumerable to expose the event.
-  * Using IUniTaskAsyncEnumerable has the advantage of simplifying processing, such as processing input through an input buffer, ignoring duplicate inputs while they are being processed, and creating more readable code.
+  * Using IUniTaskAsyncEnumerable has the advantage of simplifying processing, such as processing inputs through an input buffer, ignoring duplicate inputs while inputs are being processed, and creating more readable code.
 * These will be used by the Liftcycle (presenter) side.
 
 ## Other methods to be used on the Lifecycle side.

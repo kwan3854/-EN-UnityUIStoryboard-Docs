@@ -15,7 +15,7 @@
 
 ### Setting the canvas resolution to the reference resolution
 
-<figure><img src="../../../../.gitbook/assets/Canvas.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Canvas.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/ReferenceResolutionGuide2.png" alt=""><figcaption></figcaption></figure>
 

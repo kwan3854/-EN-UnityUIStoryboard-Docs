@@ -14,7 +14,7 @@ To help UI/UX designers and developers understand the
 
 * A brief description and definition of that UI.
 * Conditions for navigating from that UI to another UI
-* How elements that the user can interact with such as buttons, text input boxes, etc. should react.
+* How elements the user can interact with, such as buttons, text input boxes, etc. should react.
 * And so on...
 
 Please provide a detailed description.\
