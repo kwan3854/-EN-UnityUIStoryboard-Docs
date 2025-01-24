@@ -23,7 +23,7 @@ If you don't have a structured color palette system or internal tooling in place
 
 ### In UI-centric apps, performance is the responsibility of the designer.
 
-- It's no exaggeration to say that in a UI-centric app, the UI/UX artist is responsible for over 90% of the app's performance.
+- In a UI-centric app, it's safe to say that the UI/UX artist is responsible for over 90% of the app's performance.
 - Due to the nature of game engines, most of the performance load comes from resources.
 - Poor resource management (duplicate resources/too large resources/incorrect sprite atlas management) is a huge performance drain. 
 

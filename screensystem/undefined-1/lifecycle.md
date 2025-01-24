@@ -5,7 +5,7 @@
 - The actual entry point to the screen.
 - It acts as the Presenter in the MVP.
 - Create it on a per-screen basis.
-- We call it Lifecycle because it's associated with the lifetime of the screen.
+- We call it Lifecycle because it's a concept that connects to the lifetime of the screen.
 - **Create only one on a screen. **<mark style="color:red;">**(no exceptions)**</mark>.
 
 ### Implementation policy

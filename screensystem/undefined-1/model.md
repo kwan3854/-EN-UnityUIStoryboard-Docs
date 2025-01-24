@@ -9,7 +9,7 @@
 ### Implementation policy
 
 - Hold values in the form of properties based on most communication results or master data.
-- All update processing within a Model is called by Lifecycle.
+- All update processing within the Model is called by Lifecycle.
 - **1Screen 1Model**is the default.
   - Depending on the communication content or complexity, the Model can be split.
   - However, if it becomes too granular, it is essential to link with Lifecycle to pass information between models, so in principle, we adhere to 1Model, but if it is clear that the model has become too large, we split it.

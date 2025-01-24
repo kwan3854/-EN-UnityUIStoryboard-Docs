@@ -59,7 +59,7 @@ or [Packages/manifest.json](https://docs.unity3d.com/Manual/upm-manifestPrj.html
 
 ## Installing with Git and a Package Manager (not recommended)
 
-1. `Window` Β -> Β `Package Manager 열기`
+1. `Window` ->Git `Package Manager 열기`
 2. `+` Click
 3. `Add package from git URL...` Select
 4. `https://github.com/kwan3854/UnityUIStoryboard.git 입력`
