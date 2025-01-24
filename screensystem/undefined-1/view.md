@@ -19,7 +19,7 @@
   
   - This means that the View has the structure
   - Events also become bridges, but we allow them because they are easier to manage.
-  - However, by limiting the role of the View to the following two roles, we avoid the complexity of each processing.
+  - However, by limiting the role of the View to the following two roles, we can avoid the complexity of each processing.
     - Taking a Model and building the screen UI
     - Firing Events
 

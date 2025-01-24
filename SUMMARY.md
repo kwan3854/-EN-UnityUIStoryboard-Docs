@@ -39,6 +39,7 @@
       - [View](ui-storyboard/undefined-1/ui/view.md)
       - [Lifecycle (presenter)](ui-storyboard/undefined-1/ui/lifecycle-presenter.md)
       - [Model (ViewModel)](ui-storyboard/undefined-1/ui/model.md)
+      - [Builder](readme/undefined-1/ui/builder.md)
       - [LifetimeScope](ui-storyboard/undefined-1/ui/lifetimescope.md)
       - [RootLifetimeScope](ui-storyboard/undefined-1/ui/rootlifetimescope.md)
       - [UseCase](ui-storyboard/undefined-1/ui/usecase.md)

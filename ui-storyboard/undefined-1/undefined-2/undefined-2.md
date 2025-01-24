@@ -34,10 +34,10 @@ You can rename a node by right-clicking on the node -> Rename.
   - **Log In Page:** The initial screen where the login button exists.
   - **Log In Modal:** A pop-up window that proceeds with the actual login.
   - **Main Page:** The main screen you enter after a successful login.
-- From the Log In Page, the only trunk line is the one leading to the Log In Modal.
+- From the Log In Page, the only path to the Log In Modal is the main line.
   - The Log In Page can only bring up the Log In Modal.
 -  The Log In Modal has two forks in the road.
-  - Returning to the Log In Page: When you close the modal window, the
+  - Return to the Log In Page: When the modal window is closed, the
   - Going to the Main Page: When you successfully logged in.
 
 
