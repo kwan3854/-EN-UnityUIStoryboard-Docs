@@ -1,13 +1,14 @@
 # Table of contents
 
 - [UI Storyboard](README.md)
+  - [Sample Project](readme/sample-project.md)
   - [概要](ui-storyboard/undefined/README.md)
     - [References](ui-storyboard/undefined/references.md)
     - [Dependencies](ui-storyboard/undefined/dependencies.md)
     - [Overall structure diagram](ui-storyboard/undefined/undefined.md)
     - [Key Design Concepts](ui-storyboard/undefined/key-design-concepts/README.md)
       - [Onion Architecture](ui-storyboard/undefined/key-design-concepts/onion-architecture.md)
-      - [MVRP method (Model-View-Reactive Presenter)](ui-storyboard/undefined/key-design-concepts/mvrp-model-view-reactive-presenter.md)
+      - [MVRP Method (Model-View-Reactive Presenter)](ui-storyboard/undefined/key-design-concepts/mvrp-model-view-reactive-presenter.md)
       - [UI/UX Design Principles](ui-storyboard/undefined/key-design-concepts/ui-ux.md)
       - [Principles for using Reactive libraries](ui-storyboard/undefined/key-design-concepts/reactive.md)
       - [About the MVP concept](ui-storyboard/undefined/key-design-concepts/mvp.md)

@@ -9,7 +9,7 @@
 
 - For example, usernames, communication-related information, etc. are handled by including them in a repository.
 - In most cases, we get it from the server at login and create the repository at that time.
-- You can manage it as a singleton, but make sure to manage it with the appropriate LifetimeScope because the Repository can be destroyed/rebuilt, for example, when you want to return to the title screen and destroy the login information.
+- You can manage it as a singleton, but make sure you manage it with the appropriate LifetimeScope because the Repository can be destroyed/rebuilt, for example, when you want to return to the title screen and destroy the login information.
 
 ### Example code
 

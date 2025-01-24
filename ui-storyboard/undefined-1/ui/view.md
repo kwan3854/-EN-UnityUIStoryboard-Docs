@@ -1,7 +1,7 @@
 # View
 
 {% hint style="warning" %}
-View code must use the `Page`/ / / or`Modal` for each /. 
+View code must use the `Page`/ / λ`Modal` for each /. 
 {% endhint %}
 
 ## Getting a reference with SerializeField

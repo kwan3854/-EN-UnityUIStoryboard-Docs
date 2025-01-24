@@ -3,10 +3,10 @@
 ## Development Units
 
 - The default unit is 1 Presenter, 1 View, and 1 ViewModel per Page/Modal.
-- Depending on the complexity, you can have multiple ViewModels or Views, but it is recommended that they are ultimately "merged" into a single View.
+- Depending on the complexity, you can configure multiple ViewModels or Views, but it is recommended that they are ultimately "merged" into a single View.
 - In a real MVP, the Model role is played by a Repository, which may be shared and used in multiple places. (See Onion Architecture) 
 
-## About using interfaces
+## About using the interface
 
 {% hint style="success" %}
 For more information, see the [mvp.md](mvp.md "mention") Note
