@@ -48,7 +48,6 @@
     - [[Developers] Writing test/mockup code](ui-storyboard/undefined-1/undefined-3/README.md)
       - [The power of mockup code](ui-storyboard/undefined-1/undefined-3/undefined.md)
       - [Writing mockup code](ui-storyboard/undefined-1/undefined-3/undefined-1.md)
-      - [Test it out](ui-storyboard/undefined-1/undefined-3/undefined-2.md)
     - [Finished mockup UI](ui-storyboard/undefined-1/ui-1.md)
 - [UnityScreenNavigator](unityscreennavigator/README.md)
   - [Lifecycle](unityscreennavigator/lifecycle.md)

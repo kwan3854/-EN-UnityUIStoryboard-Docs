@@ -23,7 +23,7 @@ If you don't have a structured color palette system or internal tooling in place
 
 ### In UI-centric apps, performance is the responsibility of the designer.
 
-- It's no exaggeration to say that in a UI-centric app, the UI/UX artist is responsible for over 90% of the app's performance.
+- In a UI-centric app, it's safe to say that the UI/UX artist is responsible for over 90% of the app's performance.
 - Due to the nature of game engines, most of the performance load comes from resources.
 - Poor resource management (duplicate resources/too large resources/incorrect sprite atlas management) is a huge performance drain. 
 
@@ -53,7 +53,7 @@ Projects with inconsistent naming conventions become incredibly unmanageable as 
 ### Let's split folders
 
 - Divide your folders appropriately based on where your resources will be used and your different design intentions.
-- Organize them so that they're easy for others to find.
+- Organize them so they're easy for others to find.
 - This is also very much related to the Sprite Atlas (performance optimization) below.
 
 ## Sprite Atlas

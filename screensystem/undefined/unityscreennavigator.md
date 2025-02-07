@@ -7,7 +7,7 @@
 - `Page`is the base of the screen and is always visible.
 - `Page`is updated, the entire screen is updated.
 - `Modal`The `Page` as the kind of dialog you see above.
-- `Modal`can be stacked.
+- `Modal`can be stacked on top of each other.
 - Screen transitions are accomplished via transitions in the Prefab.
 
 

@@ -31,6 +31,6 @@ Be sure to do this in a new project. If you want to apply it to an existing proj
   - will generate the required asmdefs you need by default.
   - Automatically generates the required reference, which is the most basic.
 
-<figure><img src="../../../../.gitbook/assets/asmdef.png" alt=""><figcaption><p>Assembly Definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/asmdef.png" alt=""><figcaption><p>Assembly Definition</p></figcaption></figure>
 
 

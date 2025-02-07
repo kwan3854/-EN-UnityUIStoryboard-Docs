@@ -2,7 +2,7 @@
 
 ## Create an empty scene
 
-1. In the Project window, Right-click -> Select `Create` ->Select `Scene` Right-click -> -> `Scene`
+1. In the Project window, Right-click -> Select `Create` Right-click -> `Scene` Right-click -> -> `Scene`
 2. Double-click to open the created scene
 
 ## Set to Reference Resolution
@@ -15,7 +15,7 @@
 
 ### Setting the canvas resolution to the reference resolution
 
-<figure><img src="../../../.gitbook/assets/Canvas.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Canvas.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/ReferenceResolutionGuide2.png" alt=""><figcaption></figcaption></figure>
 
